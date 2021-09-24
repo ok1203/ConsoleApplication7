@@ -1,17 +1,17 @@
 #include "Person.h"
 
-Person::Person()
-{
-	this->name = "Omar";
-	this->age = 18;
-	this->luck = 100;
-}
+
 
 Person::Person(string name, int age, int luck)
 {
 	this->name = name;
 	this->age = age;
 	this->luck = luck;
+}
+
+Person::Person()
+{
+	Person("Omar", 18, 100);
 }
 
 void Person::setName(string name)
